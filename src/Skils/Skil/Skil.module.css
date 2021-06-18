@@ -1,0 +1,19 @@
+.skil {
+    width: 250px;
+    background-color: rgba(100, 149, 237, 0.19);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+}
+
+.description {
+
+}
