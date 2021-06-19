@@ -9,11 +9,12 @@ function Skils() {
         <div className={style.block}>
             <div className={`${commonStyle.container} ${style.container}`}>
                 <h2 className={style.title}>skils</h2>
-                <div className={style.skils}>
+                <div className={style.skilsContainer}>
                     <Skil/>
                     <Skil/>
                     <Skil/>
-                    <Skil/> <Skil/>
+                    <Skil/>
+                    <Skil/>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import style from "./Skil.module.css"
 
 function Skil() {
     return (
-        <div className={style.skil}>
+        <div className={style.skilsContauner}>
             <div className={style.icon}>
             </div>
             <h3>название</h3>

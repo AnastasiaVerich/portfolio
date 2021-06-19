@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav";
 
 function Header() {
     return (
-        <div className={style.header}>
+        <div className={style.block}>
             <Nav/>
         </div>
     );

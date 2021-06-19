@@ -8,7 +8,7 @@ function Projects() {
         <div className={style.block}>
             <div className={`${commonStyle.container} ${style.container}`}>
                 <h2 className={style.title}>Мои проекты</h2>
-                <div className={style.skils}>
+                <div className={style.projectsContainer}>
                     <One_project/>
                     <One_project/>
                 </div>

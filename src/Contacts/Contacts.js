@@ -8,17 +8,9 @@ function Contacts() {
             <div className={`${commonStyle.container} ${style.container}`}>
                 <h2 className={style.title}>Контакты</h2>
                 <form className={style.form}>
-                    <div className={style.item}>
                         <input/>
-                    </div>
-                    <div className={style.item}>
                         <input/>
-                    </div>
-                    <div className={style.item}>
                         <textarea/>
-                    </div>
-
-
                     <button>отправить</button>
                 </form>
             </div>

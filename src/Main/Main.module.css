@@ -1,6 +1,8 @@
 .block {
     min-height: 720px;
     background-color: rgba(255, 160, 218, 0.74);
+    display: flex;
+    align-items: center;
 }
 .container {
     min-height: 720px;

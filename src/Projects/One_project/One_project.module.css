@@ -1,22 +1,29 @@
-.skil {
+.projectsContainer {
     width: 250px;
     background-color: rgba(100, 149, 237, 0.19);
     flex-direction: column;
     display: flex;
-    /*align-items: center;*/
-    /*text-align: center;*/
-    /*justify-items: center;*/
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
 }
 
 .icon {
-    width: 250px;
+    width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCPLVi2j4vWi0TUVJA7RvJs6n9c-KmKKeSw&usqp=CAU");
+    background-position: center;
+    background-size: cover ;
+}
+.a{
+    margin: auto;
 }
 .h3{
-    margin: 10px
+
 }
 .description{
-    margin: 10px
+
 }
 
