@@ -1,17 +1,17 @@
 import React from 'react'
-import style from './Contacts.module.css';
+import style from './Contacts.module.scss';
 import commonStyle from '../Common/Styles/container.module.css'
 
 function Contacts() {
     return (
         <div className={style.block}>
-            <div className={`${commonStyle.container} ${style.container}`}>
+            <div className={style.container}>
                 <h2 className={style.title}>Контакты</h2>
                 <form className={style.form}>
-                        <input/>
-                        <input/>
+                        <input type="text"/>
+                        <input type="text"/>
                         <textarea/>
-                    <button>отправить</button>
+                    <button type="submit" className={style.formButton}>Отправить</button>
                 </form>
             </div>
         </div>

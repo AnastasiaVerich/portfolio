@@ -1,0 +1,27 @@
+@import "../Common/Styles/sass/variables";
+@import "../Common/Styles/sass/mixins";
+
+
+.block {
+    height: 100vh;
+    @include block($bgColor1 );
+}
+.container {
+  @include context(space-between);
+}
+.photo {
+ width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.text {
+    width: 300px;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 753px){
+    .container{
+        justify-content: center;
+    }
+}

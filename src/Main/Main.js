@@ -1,11 +1,11 @@
 import React from 'react'
-import style from './Main.module.css';
+import style from './Main.module.scss';
 import commonStyle from '../Common/Styles/container.module.css'
 
 function Main() {
     return (
         <div className={style.block}>
-            <div className={`${commonStyle.container} ${style.container}`}>
+            <div className={style.container}>
                 <div className={style.text}>
                     <span>Привет здесь</span>
                     <h1>Я Анастасия Верич</h1>

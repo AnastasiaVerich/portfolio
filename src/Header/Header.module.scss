@@ -1,0 +1,10 @@
+@import "../Common/Styles/sass/variables";
+@import "../Common/Styles/sass/mixins";
+
+
+.block {
+    height: 80px;
+    justify-content: flex-end;
+    @include block($promeryColor);
+
+}

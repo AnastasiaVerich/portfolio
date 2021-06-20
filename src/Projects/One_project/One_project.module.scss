@@ -1,0 +1,65 @@
+@import "../../Common/Styles/sass/variables";
+@import "../../Common/Styles/sass/mixins";
+
+.projectsContainer {
+  width: 500px;
+  background-color: $bgColor2;
+  display: flex;
+  flex-direction: column;
+
+  .icon {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .a {
+      background-color:rgba(31, 31, 32, 0.56);  ;
+      padding: 10px 20px;
+      @include text("'Poppins', sans-serif", 18px, 1.8 );
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+
+  .info {
+    padding: 25px 20px;
+
+    .h3 {
+      @include text("'Piazzolla', serif", 20px, 1.2 );
+      margin: 0;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+    }
+
+    .description {
+      @include text("'Poppins', sans-serif", 16px, 1.8 );
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+

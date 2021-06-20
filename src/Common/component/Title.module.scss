@@ -1,0 +1,28 @@
+@import "../Styles/sass/variables";
+
+.titleContainer {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  &::before {
+    content: "";
+    position: absolute;
+    background: $promeryColor;
+    width: 55px;
+    height: 1px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+.titleContainer h2 {
+  font-family: 'Piazzolla', serif;
+  margin: 0;
+  font-weight: 300;
+  color: $textColor;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+}

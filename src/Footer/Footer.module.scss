@@ -1,22 +1,19 @@
+@import "../Common/Styles/sass/variables";
+@import "../Common/Styles/sass/mixins";
+
 .block {
     height: 200px;
-    background-color: rgba(135, 206, 250, 0.71);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.container {
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: azure;
+    @include block($bgColor1 );
 
 }
-.abcd {
+.container {
+    @include context(space-around);
+    flex-direction: column;
+
+}
+.socialIcon {
     border: 1px solid;
     width: 280px;
-    height: auto;
     display: flex;
     justify-content: space-between;
 }

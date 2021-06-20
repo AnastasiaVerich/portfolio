@@ -1,16 +1,19 @@
 import React from "react";
-import style from "./One_project.module.css"
+import style from "./One_project.module.scss"
 
-function One_project() {
+function One_project(props) {
     return (
         <div className={style.projectsContainer}>
-            <div className={style.icon}>
+            <div className={style.icon} style={props.style}>
                 <a className={style.a} href={""}>Посмотреть</a>
             </div>
-            <h3 className={style.h3}>Название проекта</h3>
-            <span className={style.description}>
-             Краткое описаниеКраткое описаниеКраткое описаниеКраткое описание
+            <div className={style.info}>
+                <h3 className={style.h3}>Название проекта</h3>
+                <span className={style.description}>
+             Краткое описание Краткое описание Краткое описание Краткое описание
             </span>
+            </div>
+
         </div>
     )
 }
