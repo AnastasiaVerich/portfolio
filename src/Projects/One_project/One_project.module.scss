@@ -3,7 +3,7 @@
 
 .projectsContainer {
   width: 500px;
-  background-color: $bgColor2;
+  background-color: $bgColor1;
   display: flex;
   flex-direction: column;
 
@@ -54,7 +54,11 @@
   }
 
 }
-
+@media screen and (max-width: 610px){
+  .projectsContainer{
+    width: 100%;
+  }
+}
 
 
 

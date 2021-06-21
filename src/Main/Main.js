@@ -11,7 +11,11 @@ function Main() {
                     <h1>Я Анастасия Верич</h1>
                     <p>Я front-end разработчик</p>
                 </div>
-                <div className={style.photo}></div>
+                <div className={style.omg}>
+                    <div className={style.photo}></div>
+                    <span className={style.photoSpan}></span>
+                </div>
+
             </div>
         </div>
     );

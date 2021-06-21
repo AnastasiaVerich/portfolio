@@ -3,13 +3,21 @@
 
 .block {
     height: 200px;
-    @include block($bgColor1 );
+    @include block($bgColor2);
+    font: 400 14px/1.8 'Poppins', sans-serif;
 
 }
 .container {
     @include context(space-around);
     flex-direction: column;
 
+}
+.name {
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    font: 700 22px/1.2 'Piazzolla', serif;;
 }
 .socialIcon {
     border: 1px solid;
@@ -21,4 +29,9 @@
     background-color: rgba(255, 0, 0, 0.12);
     width: 40px;
     height: 40px;
+}
+
+.finishDesc{
+    font: 400 14px/1.2 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .5);
 }

@@ -4,21 +4,81 @@
 
 .block {
     height: 100vh;
-    @include block($bgColor1 );
+    @include block($bgColor2 );
 }
 .container {
   @include context(space-between);
 }
-.photo {
- width: 300px;
-    height: 400px;
-    background-color: antiquewhite;
-}
+
 
 .text {
     width: 300px;
-    background-color: antiquewhite;
 }
+.text span {
+  color: #fff;
+  font: 400 16px/1.8 'Poppins', sans-serif;
+}
+
+.text h1 {
+  position: relative;
+  display: inline-block;
+  font: 700 50px/1.2 'Piazzolla', serif;
+  letter-spacing: 5px;
+  margin: 0;
+  color: #fff;
+  z-index: 22;
+}
+.text h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  z-index: -1;
+  background: #4e93e6;
+}
+.text p {
+  margin: 0;
+  font: 400 27px/1.8 'Poppins', sans-serif;
+  color: white;
+}
+.photo {
+  width: 300px;
+  height: 400px;
+  background: antiquewhite;
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 0px;
+  z-index: 22;
+}
+.photoSpan{
+  transform: translate3d(-18.9px, 8.8px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 0px;
+  bottom: 0;
+  z-index: 21;
+  height: 110%;
+  width: 104%;
+  border: 5px solid #4e93e6;
+  right: 0;
+  margin-left: 8%;
+  margin-top: -8%;
+  box-sizing: border-box;
+
+}
+.omg{
+  position: relative;
+  display: table;
+}
+
+
 
 @media screen and (max-width: 753px){
     .container{
