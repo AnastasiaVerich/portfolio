@@ -3,78 +3,69 @@
 
 
 .block {
-    @include block($bgColor1 );
-    padding: 100px 0;
-}
+  @include block($bgColor1);
 
-.container {
+
+  .container {
     @include context(flex-start);
     flex-direction: column;
 
-}
 
-.title {
-    background-color: rgba(100, 149, 237, 0.25);
-}
+    .form {
+      margin-top: 30px;
+      width: 540px;
 
-.form {
-    margin-top: 30px;
-    width:540px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.form input, .form textarea {
-    width: 100%;
-    height: 32px;
-    margin-bottom: 1rem;
-    background: #252527 !important;
-    border: 1px solid #4a4a4a;
-    padding: 0 15px;
-    border-radius: 0;
-    font-family: inherit;
-}
-.form textarea {
-    min-height: 150px;
-    padding: 15px;
-}
-
-.formButton {
-    display: block;
-    font: 400 14px/1.2 'Poppins', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 7px 20px;
-    background: transparent;
-    color: #fff;
-    max-width: 170px;
-    margin: 15px auto;
-    z-index: 22;
-    text-align: center;
-    border-radius: 0px;
-    width: 100%;
-    border: none;
-    position: relative;
-}
-.formButton::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 10px;
-    width: 50%;
-    background: #4e93e6;
-    z-index: -1;
-    margin: 0 auto;
-}
-/*до тех пор, пока ширина от 0 до 550, мы выполняем это*/
-@media screen and (max-width: 550px){
-    .form{
-        width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*до тех пор, пока ширина от 0 до 550, мы выполняем это*/
+      @media screen and (max-width: 770px) {
+        width: 100%;
+      }
     }
+    .form input, .form textarea {
+      width: 100%;
+      height: 32px;
+      margin-bottom: 1rem;
+      padding: 0 15px;
+
+      background: $bgColor2;
+      border: 1px solid #4a4a4a;
+
+      font-family: inherit;
+    }
+    .form textarea {
+      min-height: 150px;
+      padding: 15px;
+    }
+    .formButton {
+      @include text($swcondTextStyle, 14px, 1.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      padding: 7px 20px;
+      max-width: 170px;
+      //для стиля кнопки
+      background: transparent;
+      border: none;
+      //для афтер
+      z-index: 22;
+      position: relative;
+    }
+    .formButton::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 10px;
+      width: 50%;
+      background: $promeryColor;
+      z-index: -1;
+      margin: 0 auto;
+    }
+  }
 }
+
+
+

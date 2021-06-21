@@ -2,36 +2,41 @@
 @import "../Common/Styles/sass/mixins";
 
 .block {
-    height: 200px;
     @include block($bgColor2);
-    font: 400 14px/1.8 'Poppins', sans-serif;
+//346
+    .container {
+        @include context(space-around);
+        flex-direction: column;
+        margin: 50px auto;
+        .name {
+            @include text($mainTextStyle, 22px, 1.2);
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+        .socialIcon {
+            width: auto;
+            border: 1px solid;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .item {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 40px;
+                height: 40px;
+                margin: 0 10px 30px 10px;
 
-}
-.container {
-    @include context(space-around);
-    flex-direction: column;
-
-}
-.name {
-    letter-spacing: 3px;
-    color: #fff;
-    margin-bottom: 20px;
-    display: block;
-    font: 700 22px/1.2 'Piazzolla', serif;;
-}
-.socialIcon {
-    border: 1px solid;
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-}
-.item {
-    background-color: rgba(255, 0, 0, 0.12);
-    width: 40px;
-    height: 40px;
+            }
+        }
+        .finishDesc{
+            @include text($swcondTextStyle, 14px, 1.2);
+            color: rgba(255, 255, 255, .5);
+        }
+    }
 }
 
-.finishDesc{
-    font: 400 14px/1.2 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, .5);
-}
+
+
+
+
+

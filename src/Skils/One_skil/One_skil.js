@@ -3,12 +3,12 @@ import style from "./One_skil.module.scss"
 
 function One_skil() {
     return (
-        <div className={style.box}>
-            <div className={style.skilsContainer}>
+
+            <div className={style.oneSkilsContainer}>
                 <div className={style.icon}>
                 </div>
-                <div className={style.textContainer}>
-                    <h3>название</h3>
+                <div className={style.info}>
+                    <h3 className={style.h3}>название</h3>
                     <span className={style.description}>
                     Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit,
@@ -17,7 +17,6 @@ function One_skil() {
                 </span>
                 </div>
             </div>
-        </div>
     )
 }
 

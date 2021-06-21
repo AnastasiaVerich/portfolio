@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Skils.module.scss"
-import commonStyle from '../Common/Styles/container.module.css'
 import One_skil from "./One_skil/One_skil";
 import Title from "../Common/component/Title";
 
@@ -21,5 +20,4 @@ function Skils() {
         </div>
     )
 }
-
 export default Skils

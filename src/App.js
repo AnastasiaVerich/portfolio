@@ -10,7 +10,7 @@ import Footer from "./Footer/Footer";
 function App() {
     return (
         <div className="App">
-            <Header/>
+           {/* <Header/>*/}
             <Main/>
             <Skils/>
             <Projects/>

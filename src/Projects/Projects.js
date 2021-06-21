@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Projects.module.scss';
-import commonStyle from '../Common/Styles/container.module.css'
 import One_project from "./One_project/One_project";
 import icon1 from ".././assets/img/1.jpg"
 import icon2 from ".././assets/img/2.jpg"
@@ -22,11 +21,8 @@ function Projects() {
                     <One_project style={img2}/>
                     <One_project style={img2}/>
                 </div>
-
             </div>
         </div>
     );
 }
-//637
-
 export default Projects;

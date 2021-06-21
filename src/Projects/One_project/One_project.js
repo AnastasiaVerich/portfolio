@@ -3,8 +3,8 @@ import style from "./One_project.module.scss"
 
 function One_project(props) {
     return (
-        <div className={style.projectsContainer}>
-            <div className={style.icon} style={props.style}>
+        <div className={style.oneProjectsContainer}>
+            <div className={style.img} style={props.style}>
                 <a className={style.a} href={""}>Посмотреть</a>
             </div>
             <div className={style.info}>
@@ -13,7 +13,6 @@ function One_project(props) {
              Краткое описание Краткое описание Краткое описание Краткое описание
             </span>
             </div>
-
         </div>
     )
 }

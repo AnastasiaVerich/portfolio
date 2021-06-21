@@ -11,7 +11,7 @@
     .projectsContainer {
       @include itemsContainer();
 
-      @media screen and (max-width: 1253px) {
+      @media screen and (max-width: 1429px) {
         justify-content: center;
       }
     }
