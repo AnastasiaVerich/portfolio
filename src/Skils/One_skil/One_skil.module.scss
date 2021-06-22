@@ -13,15 +13,24 @@
   .icon {
     height: 80px;
     width: 80px;
-    background-color: rgba(255, 255, 255, 0.1);
-    //line-height: 80px;
-    //font-size: 30px;
-    //text-align: center;
-    // в будущем для картинки понадобится
+    background-color: rgba(101, 73, 73, 0.16);
     transform: rotate(45deg);
     margin-top: 40px;
     margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      font-size: 30px;
+      transform: rotate(-45deg);
+      position: absolute;
+      content: "♥";
+      color: $promeryColor;
+    }
   }
+
 
   .info {
     text-align: center;

@@ -7,10 +7,10 @@ function Footer() {
             <div className={style.container}>
                 <div className={style.name}>Верич Анастасия</div>
                 <div className={style.socialIcon}>
-                    <div className={style.item}>fac</div>
-                    <div className={style.item}>inst</div>
-                    <div className={style.item}>vk</div>
-                    <div className={style.item}>li</div>
+                    <div className={style.item}></div>
+                    <div className={style.item}></div>
+                    <div className={style.item}></div>
+                    <div className={style.item}></div>
                 </div>
                 <div className={style.finishDesc}>© 2021 Все права защищенны.</div>
             </div>
