@@ -4,7 +4,16 @@
 
 .block {
   min-height: 100vh;
-  @include block($bgColor2);
+  position: sticky;
+  @include block(0);
+  .particles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
   .container {
     @include context(space-between);
 
@@ -13,35 +22,45 @@
       margin-top: 50px;
       width: 500px;
       height: 100%;
-    }
 
-    .textContainer span {
-      @include text($swcondTextStyle, 16px, 1.8);
+      span {
+        @include text($swcondTextStyle, 16px, 1.8);
+
+        &:nth-child(2) {
+          @include text($mainTextStyle, 50px, 1.2);
+          letter-spacing: 5px;
+
+          position: relative;
+          display: inline-block;
+          margin: 0;
+          z-index: 22;
+
+          span {
+            @include text($mainTextStyle, 50px, 1.2);
+            letter-spacing: 5px;
+
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            z-index: 22;
+
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 20px;
+              width: 100%;
+              z-index: -1;
+              background: $promeryColor;
+            }
+          }
+        }
+      }
     }
 
     .textContainer h1 {
-      @include text($mainTextStyle, 50px, 1.2);
-      letter-spacing: 5px;
-
-      position: relative;
-      display: inline-block;
-      margin: 0;
-      z-index: 22;
-    }
-
-    .textContainer h1::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 20px;
-      width: 100%;
-      z-index: -1;
-      background: $promeryColor;
-    }
-
-    .textContainer p {
       @include text($swcondTextStyle, 27px, 1.8);
       margin: 0;
     }
@@ -55,6 +74,10 @@
         position: relative;
         z-index: 22;
       }
+      //&:hover{
+      //  transform:  scale(1.005,1.005);
+      //  transition: 0.5s;
+      //}
 
       .photoSpan {
         position: absolute;

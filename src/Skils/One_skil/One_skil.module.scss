@@ -29,6 +29,10 @@
       content: "♥";
       color: $promeryColor;
     }
+    &:hover{
+      transform: rotate(-315deg) ;
+      transition: 0.5s;
+    }
   }
 
 

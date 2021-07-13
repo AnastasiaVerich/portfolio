@@ -13,7 +13,7 @@ function Projects() {
         backgroundImage: `url(${icon2})`,
     };
     return (
-        <div className={style.block}>
+        <div id={"projects"} className={style.block}>
             <div className={style.container}>
                 <Title title={"Мои проекты"}/>
                 <div className={style.projectsContainer}>

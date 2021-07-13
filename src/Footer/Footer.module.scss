@@ -34,6 +34,10 @@
                     content: "♥";
                     color: $promeryColor;
                 }
+                &:hover{
+                    border: 1px solid $textColor;
+                    transition: all 0.3s ease-in-out 0s;
+                }
 
             }
         }

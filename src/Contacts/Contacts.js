@@ -4,7 +4,7 @@ import Title from "../Common/component/Title";
 
 function Contacts() {
     return (
-        <div className={style.block}>
+        <div id={"contacts"} className={style.block}>
             <div className={style.container}>
                 <Title title={"Контакты"}/>
                 <form className={style.form}>
