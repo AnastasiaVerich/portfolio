@@ -1,0 +1,16 @@
+@import './Common/Styles/sass/variables.scss';
+
+.App {
+  > div {
+
+    &:nth-child(n) {
+    background-color: $bgColor1 ;
+    }
+    &:nth-child(2n) {
+      background-color: $bgColor2;
+    }
+    &:nth-child(1) {
+      background-color: rgba(240, 240, 240, 0.55);;
+    }
+  }
+}

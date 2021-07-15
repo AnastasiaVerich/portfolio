@@ -1,14 +1,14 @@
-@import "../Common/Styles/sass/variables";
-@import "../Common/Styles/sass/mixins";
+@import "../../Common/Styles/sass/variables";
+@import "../../Common/Styles/sass/mixins";
 
 .nav {
-    border: 1px solid;
     width: 330px;
     display: flex;
     justify-content: space-between;
     margin-right: 10%;
     @include text($mainTextStyle, 18px, 1.8);
     cursor: pointer;
+
 }
 .linkA{
     color: lightpink;
