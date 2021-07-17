@@ -6,13 +6,16 @@ import Skils from "./Skils/Skils";
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
+import Skils2 from "./Skils2/Skils2";
+import About from "./About/About";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Main/>
-            <Skils/>
+            <About/>
+            <Skils2/>
             <Projects/>
             <Contacts/>
             <Footer/>
