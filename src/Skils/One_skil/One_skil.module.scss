@@ -26,7 +26,6 @@
       font-size: 30px;
       transform: rotate(-45deg);
       position: absolute;
-      content: "♥";
       color: $promeryColor;
     }
     &:hover{
@@ -49,10 +48,6 @@
       margin: 0 0 15px;
     }
 
-    .description {
-      @include text('Poppins', 14px, 1.8);
-
-    }
   }
 }
 

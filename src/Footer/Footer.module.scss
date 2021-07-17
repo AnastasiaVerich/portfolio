@@ -15,29 +15,12 @@
             margin-bottom: 20px;
         }
         .socialIcon {
-            width: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             .item {
-                background-color: rgba(69, 32, 32, 0.1);
-                width: 40px;
-                height: 40px;
+                @include text($swcondTextStyle, 14px, 1.8);
                 margin: 0 10px 0 10px;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                &::before {
-                    font-size: 30px;
-                    position: absolute;
-                    content: "♥";
-                    color: $promeryColor;
-                }
-                &:hover{
-                    border: 1px solid $textColor;
-                    transition: all 0.3s ease-in-out 0s;
-                }
 
             }
         }

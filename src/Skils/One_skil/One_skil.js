@@ -1,20 +1,18 @@
 import React from "react";
 import style from "./One_skil.module.scss"
+import styled from "styled-components";
 
-function One_skil() {
+
+function One_skil(props) {
+
+
     return (
 
             <div className={style.oneSkilsContainer}>
-                <div className={style.icon}>
-                </div>
+             <props.name className={style.icon}>
+              </props.name>
                 <div className={style.info}>
-                    <h3 className={style.h3}>название</h3>
-                    <span className={style.description}>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua Ut enim...
-                </span>
+                    <h3 className={style.h3}>{props.title}</h3>
                 </div>
             </div>
     )

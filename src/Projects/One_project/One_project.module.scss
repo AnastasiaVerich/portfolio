@@ -30,14 +30,12 @@
       right: 0;
       opacity: 0.4;
     }
+   .button::after {
+     width: 100%;
+     height: 110%;
+   }
 
-    .a {
-      background-color: rgba(238, 236, 236, 0.78);
-      padding: 10px 20px;
-      @include text("'Poppins', sans-serif", 18px, 1.8);
-      position: relative;
-      z-index: 1;
-    }
+
   }
 
   .info {
