@@ -2,20 +2,45 @@
 @import "../Common/Styles/sass/mixins";
 
 .block {
-  @include block($bgColor1);
+
+  @include block(0);
+  align-items: flex-start;
 
   .container {
     @include context(flex-start);
     flex-direction: column;
-    justify-content: flex-start;
 
-    .skilsContainer {
-      @include itemsContainer();
+  }
 
-      @media screen and (max-width: 972px) {
-        justify-content: center;
+  .aboutContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    @include text($swcondTextStyle, 18px, 1.8);
+
+    .direction {
+      width: 45%;
+      .firstWord{
+        color: $promeryColor;
+      }
+
+    }
+
+    .aboutOtherContainer {
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      .column {
+        width: 45%;
+
+        .item b {
+          color: $promeryColor;
+
+        }
       }
     }
+
   }
 }
 
