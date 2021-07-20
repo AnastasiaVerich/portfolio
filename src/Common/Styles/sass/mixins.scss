@@ -21,8 +21,11 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: $jC;
+  @media screen and (max-width: 710px) {
+    width: 95%;
+  }
 
-}
+  }
 
 @mixin itemsContainer(){
   margin-top: 30px;

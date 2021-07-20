@@ -4,6 +4,7 @@ import One_project from "./One_project/One_project";
 import icon1 from ".././assets/img/1.jpg"
 import icon2 from ".././assets/img/2.jpg"
 import Title from "../Common/component/Title";
+import Fade from 'react-reveal/Zoom';
 
 function Projects() {
     const img1={
@@ -14,14 +15,16 @@ function Projects() {
     };
     return (
         <div id={"projects"} className={style.block}>
+            <Fade bottom>
             <div className={style.container}>
-                <Title title={"Мои проекты"}/>
+                <Title title={"My Projects"}/>
                 <div className={style.projectsContainer}>
-                    <One_project style={img1}/>
-                    <One_project style={img2}/>
-                    <One_project style={img2}/>
+                    <One_project style={img1} title={"TodoList"}/>
+                    <One_project style={img2} title={"Social Network"}/>
+                    <One_project style={img2} title={"other"}/>
                 </div>
             </div>
+            </Fade>
         </div>
     );
 }

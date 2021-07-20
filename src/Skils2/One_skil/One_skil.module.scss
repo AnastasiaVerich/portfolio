@@ -59,12 +59,14 @@
 
         }
         .skil {
-          @include text($mainTextStyle, 16px, 1.2);
+          @include text($swcondTextStyle, 14px, 1.2);
         }
       }
 
     }
-
+  @media screen and (max-width: 485px) {
+    width: 300px;
+  }
 }
 
 

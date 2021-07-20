@@ -31,9 +31,9 @@ function Main() {
             <Particles className={style.particles} params={particlesOpt}/>
             <div className={style.container}>
                 <div className={style.textContainer}>
-                    <span>Привет здесь</span>
-                    <span>Я <span>Анастасия Верич</span></span>
-                    <h1><ReactTypingEffect text={["Я front-end разработчик"]}/></h1>
+                    <span className={style.spanFirst}>Hello. My name is</span>
+                    <span className={style.spanSecond}>Anastasia Verich</span>
+                    <h1>A <ReactTypingEffect text={["front-end developer"]}/></h1>
                 </div>
                 <div className={style.omg}>
                     <Tilt className="Tilt" options={{max: 25}}>

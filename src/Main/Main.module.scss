@@ -6,7 +6,8 @@
   min-height: 100vh;
   position: sticky;
   @include block(0);
-  .particles{
+
+  .particles {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,6 +15,7 @@
     bottom: 0;
     opacity: 0.9;
   }
+
   .container {
     @include context(space-between);
 
@@ -23,53 +25,44 @@
       display: flex;
       flex-direction: column;
 
-      span {
-        @include text($swcondTextStyle, 14px, 1.8);
+      .spanFirst {
+        @include text($swcondTextStyle, 16px, 1.8);
+      }
+      .spanSecond {
+        @include text($mainTextStyle, 50px, 1.2);
+        letter-spacing: 5px;
 
-        &:nth-child(2) {
-          @include text($mainTextStyle, 50px, 1.2);
-          letter-spacing: 5px;
+        position: relative;
+        display: inline-block;
+        z-index: 22;
 
-          position: relative;
-          display: inline-block;
-          margin: 0;
-          z-index: 22;
 
-          span {
-            @include text($mainTextStyle, 50px, 1.2);
-            letter-spacing: 5px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 20px;
+          width: 100%;
+          z-index: -1;
+          background: $promeryColor;
 
-            position: relative;
-            display: inline-block;
-            margin: 0;
-            z-index: 22;
-
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              height: 20px;
-              width: 100%;
-              z-index: -1;
-              background: $promeryColor;
-            }
-          }
         }
       }
+
     }
 
     .textContainer h1 {
-      span{
-        @include text($swcondTextStyle, 27px, 1.8);
-        margin: 0;
-      }
+      @include text($swcondTextStyle, 27px, 1.8);
+      margin-top: 14px;
 
     }
+
     .omg {
       position: relative;
       display: table;
+
       .photo {
         width: 300px;
         height: 430px;
@@ -81,6 +74,7 @@
         position: relative;*/
         z-index: 22;
       }
+
       //&:hover{
       //  transform:  scale(1.005,1.005);
       //  transition: 0.5s;
@@ -93,8 +87,8 @@
         top: 0;
         bottom: 0;
         z-index: 21;
-        height: 110%;
-        width: 104%;
+        height: 100%;
+        width: 100%;
         border: 5px solid $promeryColor;
         right: 0;
         margin-left: 8%;
@@ -103,9 +97,10 @@
 
       }
     }
+
     @media screen and (max-width: 1161px) {
 
-        justify-content: center;
+      justify-content: center;
 
     }
   }

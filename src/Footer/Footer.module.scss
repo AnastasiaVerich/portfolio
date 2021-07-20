@@ -8,12 +8,12 @@
         @include context(space-around);
         flex-direction: column;
         margin: 50px auto;
-        .name {
+        /*.name {
             @include text($mainTextStyle, 22px, 1.2);
             font-weight: 700;
             letter-spacing: 3px;
             margin-bottom: 20px;
-        }
+        }*/
         .socialIcon {
             display: flex;
             flex-wrap: wrap;

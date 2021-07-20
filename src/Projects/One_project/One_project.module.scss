@@ -49,13 +49,13 @@
       margin: 0;
     }
 
-    .description {
+    /*.description {
       @include text("'Poppins', sans-serif", 16px, 1.8);
-    }
+    }*/
   }
 
   @media screen and (max-width: 610px) {
-    width: 100%;
+    width: 300px;
   }
 }
 

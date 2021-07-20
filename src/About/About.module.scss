@@ -16,31 +16,67 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top:30px;
+    margin-top: 30px;
     @include text($swcondTextStyle, 18px, 1.8);
 
     .direction {
-      width: 45%;
-      .firstWord{
+      width: 40%;
+      text-align: justify;
+
+      .firstWord {
         color: $promeryColor;
+        margin-left: 10px;
       }
+      @media screen and (max-width: 1295px) {
+        width: 70%;
+      }
+
 
     }
 
     .aboutOtherContainer {
-      width: 45%;
+      width: 55%;
       display: flex;
       justify-content: space-between;
+
+
       .column {
-        width: 45%;
+        width: 49%;
+        @media screen and (max-width: 1446px){
+          width: auto;
+        }
 
         .item b {
           color: $promeryColor;
 
         }
       }
-    }
 
+      @media screen and (max-width: 1295px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        .column {
+          width: 100%;
+          text-align: end;
+        }
+      }
+    }
+    @media screen and (max-width: 898px) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      .direction{
+        width: 100%;
+      }
+      .aboutOtherContainer{
+        margin-top: 30px;
+        width: 100%;
+        .column{
+          text-align: justify;
+        }
+      }
+    }
   }
 }
 

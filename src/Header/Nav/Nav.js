@@ -14,25 +14,31 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>Главная</Link>
+                  duration={500}>Home</Link>
+            <Link activeClass={style.linkA}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>About</Link>
             <Link activeClass={style.linkA}
                   to="skils"
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>Скиллы</Link>
+                  duration={500}>Skills</Link>
             <Link activeClass={style.linkA}
                   to="projects"
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>Проекты</Link>
+                  duration={500}>Projects</Link>
             <Link activeClass={style.linkA}
                   to="contacts"
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>Контакты</Link>
+                  duration={500}>Contact</Link>
 
         </div>
     );

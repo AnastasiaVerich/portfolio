@@ -2,11 +2,10 @@ import React from "react";
 import './App.scss';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Skils from "./Skils/Skils";
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
-import Skils2 from "./Skils2/Skils2";
+import Skils from "./Skils2/Skils";
 import About from "./About/About";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
             <Header/>
             <Main/>
             <About/>
-            <Skils2/>
+            <Skils/>
             <Projects/>
             <Contacts/>
             <Footer/>

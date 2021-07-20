@@ -8,13 +8,13 @@ function One_project(props) {
         <div className={style.oneProjectsContainer}>
             <div className={style.img} style={props.style}>
 
-                <button className={`${buttonStyle.formButton} ${style.button}`}>Посмотреть</button>
+                <button className={`${buttonStyle.formButton} ${style.button}`}>See more</button>
             </div>
             <div className={style.info}>
-                <h3 className={style.h3}>Название проекта</h3>
-                <span className={style.description}>
+                <h3 className={style.h3}>{props.title}</h3>
+                {/*<span className={style.description}>
              Краткое описание Краткое описание Краткое описание Краткое описание
-            </span>
+            </span>*/}
             </div>
         </div>
     )

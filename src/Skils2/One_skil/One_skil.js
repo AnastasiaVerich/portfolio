@@ -1,14 +1,14 @@
 import React from "react";
-import style from "./One_skil2.module.scss"
+import style from "./One_skil.module.scss"
 import styled from "styled-components";
 
 
-function One_skil2(props) {
+function One_skil(props) {
 const skils=
     props.skils.map((x)=>
         <div className={style.one_skil}>
-        <props.name className={style.icon}/>
-        <div className={style.skil}>{x}</div>
+        <x.icon className={style.icon}/>
+        <div className={style.skil}>{x.title}</div>
     </div>
     )
 
@@ -27,4 +27,4 @@ const skils=
     )
 }
 
-export default One_skil2
+export default One_skil

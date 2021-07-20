@@ -11,8 +11,9 @@
     .projectsContainer {
       @include itemsContainer();
 
-      @media screen and (max-width: 1429px) {
+      @media screen and (max-width: 1450px) {
         justify-content: center;
+        flex-direction: column;
       }
     }
   }

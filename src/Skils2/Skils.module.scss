@@ -12,8 +12,9 @@
     .skilsContainer {
       @include itemsContainer();
 
-      @media screen and (max-width: 972px) {
+      @media screen and (max-width: 1160px) {
         justify-content: center;
+        flex-direction: column;
       }
     }
   }
