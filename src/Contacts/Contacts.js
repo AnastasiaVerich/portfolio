@@ -3,18 +3,30 @@ import style from './Contacts.module.scss';
 import Title from "../Common/component/Title";
 import Fade from 'react-reveal/Zoom';
 import axios from "axios";
-import {getFormValues} from "redux-form";
 
-const send=()=>{
-    debugger
-    axios.post("http://localhost:3010/sendMessages",{
-        name:  document.getElementById('Name'),
-        contacts:"jnjj",
-        message:getFormValues('sms')
+let emailForm;
+let messagesForm;
+let nameForm;
+ const send= (event)=>{
+     event.preventDefault()
+    axios.post("https://gmail-node2.herokuapp.com/sendMessages", {
+        name: nameForm,
+        contacts: emailForm,
+        message: messagesForm
+    }).then(()=>{
+        alert("send")
     })
-        .then(()=>{
-            alert("send")
-        })
+
+}
+const handleEmailChange=(e) =>{
+     emailForm = e.target.value;
+}
+const handleNameChange=(e) =>{
+    nameForm = e.target.value;
+}
+const handleMessagesChange=(e) =>{
+    messagesForm = e.target.value;
+
 }
 
 function Contacts() {
@@ -23,10 +35,10 @@ function Contacts() {
             <Fade bottom>
             <div className={style.container}>
                 <Title title={"Contact"}/>
-                <form className={style.form} onSubmit={send} name={"form"}>
-                        <input placeholder={"Name"} type="text" name={"Name"} value={"ss"}/>
-                        <input placeholder={"Email"}type="text" name={"Email"}/>
-                        <textarea placeholder={"Your messages"} name={"sms"}/>
+                <form className={style.form} onSubmit={send} name={"form"} id="formElem">
+                        <input placeholder={"Name"} type="text" name={"Name"} onChange={handleNameChange} />
+                        <input placeholder={"Email"}type="text" name={"Email"} onChange={handleEmailChange}/>
+                        <textarea placeholder={"Your messages"} name={"sms"} onChange={handleMessagesChange}/>
                     <button type="submit" className={style.formButton} >SEND MESSAGE</button>
                 </form>
             </div>
