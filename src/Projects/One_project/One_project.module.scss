@@ -39,12 +39,13 @@
   }
 
   .info {
-    padding: 25px 20px;
+    padding: 15px 20px;
 
     .h3 {
-      @include text("'Piazzolla', serif", 20px, 1.2);
+      @include text($swcondTextStyle, 17px, 1.2);
       text-transform: capitalize;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+
 
       margin: 0;
     }

@@ -19,14 +19,14 @@
             flex-wrap: wrap;
             justify-content: space-around;
             .item {
-                @include text($swcondTextStyle, 14px, 1.8);
+                @include text($swcondTextStyle, 15px, 1.8);
                 margin: 0 10px 0 10px;
 
             }
         }
         .finishDesc{
             margin-top: 30px;
-            @include text($swcondTextStyle, 14px, 1.2);
+            @include text($swcondTextStyle, 15px, 1.2);
             color: rgba(21, 20, 20, 0.5);
         }
     }

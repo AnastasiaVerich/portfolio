@@ -22,15 +22,15 @@ function About() {
                         </div>
                         <div className={style.aboutOtherContainer}>
                             <div className={style.column}>
-                                <div className={style.item}><b>Name:</b> Anastasia Verich</div>
-                                <div className={style.item}><b>Age:</b> 22</div>
-                                <div className={style.item}><b>From:</b> Belarus</div>
+                                <div className={style.item}><span>Name:</span> Anastasia Verich</div>
+                                <div className={style.item}><span>Age:</span> 22</div>
+                                <div className={style.item}><span>From:</span> Belarus</div>
 
                             </div>
                             <div className={style.column}>
-                                <div className={style.item}><b>Email:</b> a.verich.m@gmail.com</div>
-                                <div className={style.item}><b>Phone:</b> +375 29 727 69 70</div>
-                                <div className={style.item}><b>Freelancer:</b> Available</div>
+                                <div className={style.item}><span>Email:</span> a.verich.m@gmail.com</div>
+                                <div className={style.item}><span>Phone:</span> +375 29 727 69 70</div>
+                                <div className={style.item}><span>Freelancer:</span> Available</div>
                             </div>
                         </div>
 

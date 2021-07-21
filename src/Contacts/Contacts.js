@@ -36,9 +36,9 @@ function Contacts() {
             <div className={style.container}>
                 <Title title={"Contact"}/>
                 <form className={style.form} onSubmit={send} name={"form"} id="formElem">
-                        <input placeholder={"Name"} type="text" name={"Name"} onChange={handleNameChange} />
-                        <input placeholder={"Email"}type="text" name={"Email"} onChange={handleEmailChange}/>
-                        <textarea placeholder={"Your messages"} name={"sms"} onChange={handleMessagesChange}/>
+                        <input placeholder={"Name"} type="text"  onChange={handleNameChange} />
+                        <input placeholder={"Email"}type="text" onChange={handleEmailChange}/>
+                        <textarea placeholder={"Your messages"} onChange={handleMessagesChange}/>
                     <button type="submit" className={style.formButton} >SEND MESSAGE</button>
                 </form>
             </div>

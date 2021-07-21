@@ -10,11 +10,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 
 
   .title {
-    @include text($mainTextStyle, 25px, 1.2);
+    @include text($mainTextStyle, 23px, 1.2);
     position: relative;
 
     &::before {
@@ -35,14 +35,15 @@
       height: 100px;
       display: flex;
       align-items: center;
+
       .one_skil {
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100px;
-        .icon {
+        /*.icon {
           height: 50px;
           width: 50px;
           display: flex;
@@ -57,9 +58,19 @@
             color: $promeryColor;
           }
 
+        }*/
+
+        .img{
+          height: 50px;
+          width: 50px;
+          // для картинки
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
         }
         .skil {
-          @include text($swcondTextStyle, 14px, 1.2);
+          @include text($swcondTextStyle, 17px, 1.2);
         }
       }
 

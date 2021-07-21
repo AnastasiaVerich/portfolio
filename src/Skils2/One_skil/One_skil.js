@@ -7,8 +7,9 @@ function One_skil(props) {
 const skils=
     props.skils.map((x)=>
         <div className={style.one_skil}>
-        <x.icon className={style.icon}/>
-        <div className={style.skil}>{x.title}</div>
+            {/*<x.icon className={style.icon}/>*/}
+            <div className={style.img} style={x.style}/>
+            <div className={style.skil}>{x.title}</div>
     </div>
     )
 
