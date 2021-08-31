@@ -8,7 +8,8 @@ function One_project(props) {
         <div className={style.oneProjectsContainer}>
             <div className={style.img} style={props.style}>
 
-                <button className={`${buttonStyle.formButton} ${style.button}`}>See more</button>
+                <button className={`${buttonStyle.formButton} ${style.button}`}
+                        onClick={()=>{return window.open(props.link)}}>See more</button>
             </div>
             <div className={style.info}>
                 <h3 className={style.h3}>{props.title}</h3>
