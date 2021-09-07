@@ -9,10 +9,10 @@ function Footer() {
                 <div className={style.name}>Anastasia Verich</div>
 */}
                 <div className={style.socialIcon}>
-                    <div className={style.item}>Facebook</div>
-                    <div className={style.item}>Linkedin</div>
-                    <div className={style.item}>GitHub</div>
-                    <div className={style.item}>WhatsUp</div>
+                    <div className={style.item} onClick={()=>{return window.open("https://www.facebook.com/profile.php?id=100004185551501")}}>Facebook</div>
+                    <div className={style.item}onClick={()=>{return window.open("https://www.linkedin.com/in/anastasia-verich-106a67216/")}}>Linkedin</div>
+                    <div className={style.item}  onClick={()=>{return window.open("https://github.com/AnastasiaVerich")}}>GitHub</div>
+                    <div className={style.item}onClick={()=>{return window.open("https://t.me/sector_21")}}>Telegram</div>
 
                 </div>
                 <div className={style.finishDesc}>© 2021 Anastasia Verich , Are Right All Resereved.</div>

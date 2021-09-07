@@ -7,15 +7,20 @@ import axios from "axios";
 let emailForm;
 let messagesForm;
 let nameForm;
- const send= (event)=>{
+ const send= async (event)=>{
      event.preventDefault()
-    axios.post("https://gmail-node2.herokuapp.com/sendMessages", {
-        name: nameForm,
-        contacts: emailForm,
-        message: messagesForm
-    }).then(()=>{
-        alert("send")
-    })
+     try{
+         let res = await  axios.post("https://gmail-node2.herokuapp.com/sendMessages", {
+             name: nameForm,
+             contacts: emailForm,
+             message: messagesForm
+         })
+         alert(res)
+     }
+     catch (err){
+         alert(err)
+     }
+
 
 }
 const handleEmailChange=(e) =>{
