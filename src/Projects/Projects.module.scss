@@ -2,18 +2,27 @@
 @import "../Common/Styles/sass/mixins";
 
 .block {
-  @include block($bgColor2 );
+  @include block($bgColor2);
+
 
   .container {
-    @include context(space-between );
+    @include context(space-between);
     flex-direction: column;
+
+    @media screen and (max-width: 710px) {
+     width: 70%;
+    }
+    @media screen and (max-width: 460px) {
+      width: 95%;
+    }
 
     .projectsContainer {
       @include itemsContainer();
-width: 100%;
+      width: 100%;
       @media screen and (max-width: 1450px) {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
       }
     }
   }

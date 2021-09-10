@@ -21,6 +21,9 @@
             .item {
                 @include text($swcondTextStyle, 15px, 1.8);
                 margin: 0 10px 0 10px;
+                &:hover{
+                    cursor: pointer;
+                }
 
             }
         }

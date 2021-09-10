@@ -23,6 +23,7 @@
         width: 100%;
       }
     }
+
     .form input, .form textarea {
       width: 100%;
       height: 32px;
@@ -35,7 +36,8 @@
       border: 1px solid black;
 
       font-family: inherit;
-      &:focus{
+
+      &:focus {
         border: 2px solid transparent;
       }
     }
@@ -44,6 +46,7 @@
       min-height: 150px;
       padding: 15px;
     }
+
     .formButton {
       @include text($swcondTextStyle, 14px, 1.2);
       text-transform: uppercase;
@@ -58,6 +61,10 @@
       z-index: 0;
       position: relative;
     }
+    &:disabled{
+      clear-after: none;
+    }
+
     .formButton::after {
       content: "";
       position: absolute;
@@ -71,9 +78,25 @@
       margin: 0 auto;
       transition: all 0.2s ease-in-out;
     }
+    .formButton:disabled::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 10px;
+      width: 50%;
+      background: rgba(183, 180, 176, 0.79);
+      z-index: -1;
+      margin: 0 auto;
+      transition: all 0.2s ease-in-out;
+    }
+
+
     .formButton:hover {
       text-decoration: none;
-      &:after{
+
+      &:after {
         width: 100%;
         height: 110%;
         transition: all 0.3s ease-in-out 0s;

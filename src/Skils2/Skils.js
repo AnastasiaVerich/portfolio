@@ -107,10 +107,10 @@ function Skils() {
     //     content: "♀";
     //   }`;
     const forReact=[{title: "HTML5", style: HTML5},{title: "JSX", style: JSX}]
-    const forRedux=[{title: "CSS3", style: CSS3},{title: "SASS", style: SASS},{title: "Bootstrap", style: Bootstrap}]
+    const forRedux=[{title: "CSS3", style: CSS3},{title: "SASS", style: SASS},/*{title: "Bootstrap", style: Bootstrap}*/]
     const forJS_TS=[{title: "React", style: ReacT},{title: "JS", style: Javascript},{title: "TS", style: TypeScript},{title: "Node", style: Node}]
     const forHTML_CSS=[{title: "Webpack", style: Webpack}]
-    const forGIT=[{title: "Github", style: Github},{title: "Photoshop", style: Photoshop}]
+    const forGIT=[{title: "Github", style: Github}/*,{title: "Photoshop", style: Photoshop}*/]
 
     return (
         <div id={"skils"} className={style.block}>
@@ -121,7 +121,7 @@ function Skils() {
                     <One_skil title={"HTML"} skils={forReact} />
                     <One_skil title={"CSS"} skils={forRedux}/>
                     <One_skil title={"Javascript/Typescript"} skils={forJS_TS}/>
-                    <One_skil title={"Build Tools"} skils={forHTML_CSS}/>
+                    {/*<One_skil title={"Build Tools"} skils={forHTML_CSS}/>*/}
                     <One_skil title={"Other"} skils={forGIT}/>
 
                 </div>

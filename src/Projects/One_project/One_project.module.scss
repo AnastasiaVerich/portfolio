@@ -7,6 +7,17 @@
   background-color: $bgColor1;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1450px) {
+    width: 500px
+  }
+  @media screen and (max-width: 726px) {
+    width: 100%;
+    height: 300px;
+  }
+  @media screen and (max-width: 460px) {
+    width: 300px;
+    height: 200px;
+  }
 
   .img {
     height: 300px;
@@ -19,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-// делает катину темнее
+    // делает катину темнее
     &::before {
       position: absolute;
       content: "";
@@ -30,10 +41,17 @@
       right: 0;
       opacity: 0.4;
     }
-   .button::after {
-     width: 100%;
-     height: 110%;
-   }
+
+    .button {
+      &:after {
+        width: 100%;
+        height: 110%;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
 
   }
@@ -53,10 +71,6 @@
     /*.description {
       @include text("'Poppins', sans-serif", 16px, 1.8);
     }*/
-  }
-
-  @media screen and (max-width: 610px) {
-    width: 300px;
   }
 }
 
